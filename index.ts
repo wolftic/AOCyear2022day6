@@ -19,11 +19,14 @@ if (isNaN(amount)) {
 
 const signal = fs.readFileSync(filePath, "utf-8");
 
+// skip the minimum amount of distinct characters
 for (let i = amount; i < signal.length; i++) {
   let isValid = true;
   let text = "";
 
+  // move from the start in sequence to the last character unless invalid
   for (let j = i - amount; j < i; j++) {
+    // when text combination is not distinct
     if (text.includes(signal[j])) {
       isValid = false;
       break;
