@@ -1,0 +1,17 @@
+{
+  "name": "aocyear2022day6",
+  "version": "1.0.0",
+  "description": "Solution made in Typescript.",
+  "main": "bin/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node ./bin/index.js"
+  },
+  "keywords": [],
+  "author": "Lorenzo Kramer",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.0.4"
+  }
+}
